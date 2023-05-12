@@ -1,9 +1,13 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "media.scss";
-@import "function.scss";
-@import "effets.scss";
-@import "button.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "base/reset.scss";
+@import "composants/button.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "pages/home.scss";
+@import "pages/menu.scss";
+@import "base/_base.scss";
+
 

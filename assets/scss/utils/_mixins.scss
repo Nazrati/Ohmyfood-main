@@ -1,0 +1,29 @@
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flexrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-font($weight) {
+    font-weight: $weight;
+}
+
+@mixin text-size($size) {
+    font-size: $size;
+}
+
+@mixin text-height($line-height) {
+    line-height: $line-height;
+}
+
+@mixin text-line {
+    text-decoration: none;
+}
+
+ 

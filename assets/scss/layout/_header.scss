@@ -1,0 +1,27 @@
+/***header***/
+.headergroup {
+    @include flexcolumn;
+    width: 375px;
+    height: 113px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+    & img {
+        width: 162px;
+        height: 44px;
+        padding-top: 14px;
+    }
+}
+
+.navbar {
+    width: 375px;
+    height: 52px;
+    @include flexrow;
+    background: $lightgray;
+
+    &__link {
+        @include text-font(500);
+        @include text-line;
+        @include text-size(16px);
+        color: $color-gray; 
+    }
+}

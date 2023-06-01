@@ -1,36 +1,27 @@
-/***bouttons***/
-.fonctionnement{
-    margin-top: 48px;
-    width: 375px;
-    height: 400px;  
+/***bouttons***/  
+.btn {
+    @include flexcolumn;
+    gap:30px;
+    margin: 26px 0 68px;
 
-    &__gradient {
+    &__degraded {
         color: $color-white;
         background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
         padding: 13px 18px;
-        @include text-font(500);
-        @include text-size(16px)
-    } 
-
-    & div {
-        margin-top: 26px;
-        @include flexcolumn;
-        gap: 24px;
+        font-size: 16px;
     }
 
     &__grey {
         background-color: $verylight-gray;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
-        width: 323px;
-        height: 73px;
-        @include text-font(500);
-        @include text-size(16px)
+        border-color: $verylight-gray;
+        width: 300px;
+        height: 70px; 
+        font-size: 16px;
     }
     
-    & h1 {
-      margin-left: 20px;
-    }
-}
+   
+ }

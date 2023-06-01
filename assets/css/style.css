@@ -1,18 +1,219 @@
-/* Error: Undefined mixin.
- *    ,
- * 13 |         @include text-font(500);
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   assets\scss\composants\_button.scss 13:9  @import
- *   assets\scss\style.scss 6:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502          @include text-font(500);\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   assets\\scss\\composants\\_button.scss 13:9  @import\a   assets\\scss\\style.scss 6:9                root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***bouttons***/
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 26px 0 68px;
+}
+.btn__degraded {
+  color: #FFFFFF;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 13px 18px;
+  font-size: 16px;
+}
+.btn__grey {
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: #F7F7F7;
+  width: 300px;
+  height: 70px;
+  font-size: 16px;
+}
+
+/***header***/
+.headergroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.headergroup img {
+  height: 25px;
+  width: 150px;
+}
+.headergroup__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EAEAEA;
+}
+.navbar__link {
+  color: #353535;
+}
+
+footer {
+  margin: 0 0 22px 0;
+  background: #353535;
+  height: 186px;
+}
+footer img {
+  height: 20px;
+  margin: 22px 0 0 18px;
+  filter: brightness(30);
+}
+footer a {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 8px 8px 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+/***Explorer nos restaurant***/
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  width: 100%;
+  height: 287px;
+  background: #F7F7F7;
+  text-align: center;
+  padding: 39px 0 57px;
+}
+.explorer h2 {
+  font-size: 18px;
+  color: #353535;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/***Fonctionnement***/
+.fonctionnement {
+  margin-top: 48px;
+}
+.fonctionnement h1 {
+  margin-left: 20px;
+}
+
+/***restaurants***/
+.restaurants {
+  background: #F7F7F7;
+  margin-bottom: 66px;
+}
+.restaurants h1 {
+  margin-left: 20px;
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+.restaurants .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.restaurants .card img {
+  width: 100%;
+  height: 231px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurants .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 16px;
+  padding-left: 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.restaurants .card__content--title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+}
+.restaurants .card h3 {
+  color: #000000;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+/* Desktop (desktop, less than 1440px) */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,20 +1,21 @@
 footer {
-    margin: 0 0 22px 0;
     background: $color-gray;
-    height: 186px;
+    padding: 22px 25px;
 
-    & img {
+    img {
         height: 20px;
-        margin: 22px 0 0 18px;
+        margin-bottom: 16px;
         filter: brightness(30);
     }
 
-    & a {
+    .footer-links {
         display: flex;
         flex-direction: column;
-        margin: 8px 8px 8px 18px;
-        font-weight: 500;
-        color:$color-white;
+        gap: 7px;
+
+        a {
+            font-weight: 400;
+            color: $color-white;
+        }
     }
-}  
-    
+}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -114,20 +114,21 @@ table {
 }
 
 footer {
-  margin: 0 0 22px 0;
   background: #353535;
-  height: 186px;
+  padding: 22px 25px;
 }
 footer img {
   height: 20px;
-  margin: 22px 0 0 18px;
+  margin-bottom: 16px;
   filter: brightness(30);
 }
-footer a {
+footer .footer-links {
   display: flex;
   flex-direction: column;
-  margin: 8px 8px 8px 18px;
-  font-weight: 500;
+  gap: 7px;
+}
+footer .footer-links a {
+  font-weight: 400;
   color: #FFFFFF;
 }
 
@@ -171,19 +172,19 @@ h1 {
   padding-top: 48px;
   padding-bottom: 20px;
 }
-.restaurants .card {
+.restaurants .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.restaurants .card img {
+.restaurants .cards img {
   width: 100%;
   height: 231px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurants .card__content {
+.restaurants .cards__content {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -196,12 +197,12 @@ h1 {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.restaurants .card__content--title {
+.restaurants .cards__content--title {
   color: #000000;
   font-weight: 700;
   font-size: 18px;
 }
-.restaurants .card h3 {
+.restaurants .cards h3 {
   color: #000000;
   font-weight: 300;
   font-size: 17px;

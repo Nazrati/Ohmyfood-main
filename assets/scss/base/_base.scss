@@ -3,13 +3,17 @@
     text-decoration: none;
 }
 
+/***icones***/  
+.fa-regular, .far {
+    position: relative;
+    left: 45%;
+    color: $color-icones;
+}
+
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-
-}
+@media (max-width: 1024px) {}
 
 /* Desktop (desktop, less than 1440px) */
-@media (max-width: 1440px) {
-
-}
+@media (max-width: 1440px) {}

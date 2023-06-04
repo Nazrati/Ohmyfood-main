@@ -1,3 +1,4 @@
+/***Home page***/
 /***Explorer nos restaurant***/
 .explorer {
   @include flexcolumn;
@@ -31,49 +32,78 @@ h1 {
 /***restaurants***/
 .restaurants {
   background: $verylight-gray;
+  padding: 0 15px;
   margin-bottom: 66px;
 
   & h1 {
-    margin-left: 20px;
     padding-top: 48px;
     padding-bottom: 20px;
   }
+}
 
 .cards {
   @include flexcolumn;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  gap: 18px;
 
   & img {
-    width: 100%;
-    height: 231px;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+}
+
+.card {
+  width: 100%;
 
   &__content {
+    background: $color-white;
+    height: 77px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding-top: 16px;
-    padding-left: 13px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 60px; 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 13px;
+    border-radius: 15px;
   }
-  
+
   &__content--title {
-   color: $color-black; 
-   font-weight: 700;
-   font-size: 18px;
-  }  
+    background: $color-white;
+    font-weight: 700;
+    font-size: 18px;
+    color: $color-black;
+  }
 
   h3 {
-    color: $color-black; 
+    color: $color-black;
     font-weight: 300;
     font-size: 17px;
   }
 }
+
+/***icones***/  
+.pastille {
+  position: absolute;
+  left: -15px;
+  border: 2px solid $color-primary;
+    border-radius: 25px;
+    padding: 4px 8px;
+    color: $color-white;
+    background: $color-primary;
+}
+
+.fa-store {
+  color:$color-primary;
+  position: absolute;
+  left: 12%;
+}
+
+.fa-list-ul {
+  color: $color-icones;
+  position: absolute;
+  left: 12%;
+}
+
+.fa-mobile-screen-button {
+  color: $color-icones;
+  position: absolute;
+  left: 12%;
 }

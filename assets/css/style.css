@@ -133,6 +133,19 @@ footer .footer-links a {
   font-weight: 400;
   color: #FFFFFF;
 }
+footer .fa-utensils {
+  color: #FFFFFF;
+  width: 11px;
+  height: 13px;
+  margin-right: 11px;
+}
+
+.fa-handshake-angle {
+  color: #FFFFFF;
+  width: 11px;
+  height: 13px;
+  margin-right: 11px;
+}
 
 /***Home page***/
 /***Explorer nos restaurant***/
@@ -251,6 +264,8 @@ h1 {
   position: relative;
   left: 45%;
   color: #7E7E7E;
+  width: 22px;
+  height: 21px;
 }
 
 /****** Media queries ***********/

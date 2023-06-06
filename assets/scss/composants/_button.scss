@@ -1,7 +1,7 @@
-/***bouttons***/  
+/***buttons***/
 .btn {
     @include flexcolumn;
-    gap:30px;
+    gap: 30px;
     margin: 26px 0 68px;
 
     &__degraded {
@@ -20,8 +20,27 @@
         border-color: $verylight-gray;
         border: none;
         position: relative;
-        width: 300px;
-        height: 70px; 
+        width: 320px;
+        height: 70px;
         font-size: 16px;
     }
- }
+}
+
+/***button menu page***/
+.btn__grey--menu {
+    background: $color-white;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    width: 349px;
+    height: 69px;
+}
+
+.btn__degraded--menu {
+    position: absolute;
+    left: 25%;
+
+    & .btn__degraded {
+        width: 180px;
+        height: 50px;
+    }
+}

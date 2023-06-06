@@ -26,5 +26,11 @@
 
     &__link {
         color: $color-gray;
+        margin-left: 16px;
     }
+}
+
+/***header menu page***/
+.headergroup__logo--menu {
+    padding-top: 8px;
 }

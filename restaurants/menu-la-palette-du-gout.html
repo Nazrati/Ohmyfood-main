@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title>Menu - La palette du goût</title>
@@ -15,52 +15,62 @@
 
 <body>
     <header class="headergroup">
-        <div class="headergroup__logo"><img src="../assets/images/logo/ohmyfood.png" width="162" height="44" alt="logo">
+        <div class="headergroup__logo headergroup__logo--menu"><a href="../index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a><img src="../assets/images/logo/ohmyfood.png" width="162" height="44" alt="logo">
         </div>
     </header>
-    <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" width="346" height="231"
-        alt="Menu - La palette du goût">
     <main>
-        <section class="entrees">
-            <h1>La palette du goût</h1>
-            <h2>Entrées</h2>
-            <div class="btn">
-                <button class="btn__grey">Fricassée d'escargots<br>Au piment d'Espelette 25€</button>
-                <button class="btn__grey">Foie gras de canard mi-cuit<br>Et ses copeaux de truffe noire 35€</button>
-                <button class="btn__grey">Œuf au plat<br>Assaisonné à la truffe sur lit de caviar 20€</button>
-            </div>
-        </section>
-        <section class="plats">
-            <h1>Plats</h1>
-            <div class="btn">
-                <button class="btn__grey">Filet de bœuf aux herbes<br>Accompagné de sa ribambelle de légumes
-                    40€</button>
-                <button class="btn__grey">Parmentier de queue de bœuf<br>À la truffe noire sur sa purée de panais
-                    35€</button>
-                <button class="btn__grey">Filet de turbot<br>Aux agrumes 44€</button>
-            </div>
-        </section>
-        <section class="desserts">
-            <h1>Desserts</h1>
-            <div class="btn">
-                <button class="btn__grey">Paris-Brest<br>Revisité 18€</button>
-                <button class="btn__grey">Macaron au chocolat d'exception<br>Et glace à la vanille de Madagascar
-                    22€</button>
-                <button class="btn__grey">Mousse au chocolat<br>Au piment d'Espelette et à la truffe noire 23€</button>
-            </div>
-            <button class="btn__degraded">Commander</button>
-        </section>
+        <div class="img">
+            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" width="346" height="231"
+                alt="Menu - La palette du goût">
+        </div>
+        <div class="container">
+            <section class="first-title">
+                <div>
+                    <h1>La palette du goût <i class="fa-sharp fa-regular fa-heart menu"></i></h1>
+                </div>
+            </section>
+            <section class="menu">
+                <h1>Entrées</h1>
+                <div class="btn">
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Fricassée d'escargots</span> <span>Au piment d'Espelette <span class="prix">25€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Foie gras de canard mi-cuit</span> <span>Et ses copeaux de truffe noire <span class="prix">35€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Œuf au plat</span> <span>Assaisonné à la truffe sur lit de caviar <span class="prix">20€</span></span></button>
+                </div>
+            </section>
+            <section class="menu">
+                <h1>Plats</h1>
+                <div class="btn">
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Filet de bœuf aux herbes</span> <span>Accompagné de sa ribambelle de légumes
+                        <span class="prix">40€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Parmentier de queue de bœuf</span> <span>À la truffe noire sur sa purée de panais
+                        <span class="prix">35€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Filet de turbot</span> <span>Aux agrumes <span class="prix">44€</span></span></button>
+                </div>
+            </section>
+            <section class="menu">
+                <h1>Desserts</h1>
+                <div class="btn">
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Paris-Brest</span> <span>Revisité <span class="prix">18€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Macaron au chocolat d'exception</span> <span>Et glace à la vanille de Madagascar
+                        <span class="prix">22€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="plats">Mousse au chocolat</span> <span>Au piment d'Espelette et à la truffe noire
+                        <span class="prix">23€</span></span></button>
+                </div>
+            </section>
+            <section class="btn__degraded--menu">
+                <button class="btn__degraded">Commander</button>
+            </section>
+        </div>
     </main>
     <footer>
-        <div><img class="footer-logo" src="./assets/images/logo/ohmyfood.png" width="137" height="27" alt="logo"></div>
+        <div><img class="footer-logo" src="../assets/images/logo/ohmyfood.png" width="137" height="27" alt="logo"></div>
         <div class="footer-links">
-            <a href="#"><i class="fa-sharp fa-solid fa-utensils"></i> Proposer un restaurant</a>
-            <a href="#"><i class="fa-sharp fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
+           <a href="#"><i class="fa-sharp fa-solid fa-utensils"></i> Proposer un restaurant</a>
+           <a href="#"><i class="fa-sharp fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
+           <a href="#">Mentions légales</a>
+           <a href="#">Contact</a>
         </div>
-    </footer>
-    </div>
+     </footer>
 </body>
 
 </html>

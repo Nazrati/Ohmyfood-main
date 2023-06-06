@@ -54,7 +54,7 @@ table {
   border-spacing: 0;
 }
 
-/***bouttons***/
+/***buttons***/
 .btn {
   display: flex;
   flex-direction: column;
@@ -77,9 +77,27 @@ table {
   border-color: #F7F7F7;
   border: none;
   position: relative;
-  width: 300px;
+  width: 320px;
   height: 70px;
   font-size: 16px;
+}
+
+/***button menu page***/
+.btn__grey--menu {
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  width: 349px;
+  height: 69px;
+}
+
+.btn__degraded--menu {
+  position: absolute;
+  left: 25%;
+}
+.btn__degraded--menu .btn__degraded {
+  width: 180px;
+  height: 50px;
 }
 
 /***header***/
@@ -113,6 +131,12 @@ table {
 }
 .navbar__link {
   color: #353535;
+  margin-left: 16px;
+}
+
+/***header menu page***/
+.headergroup__logo--menu {
+  padding-top: 8px;
 }
 
 footer {
@@ -254,18 +278,83 @@ h1 {
   left: 12%;
 }
 
+/***menu***/
+/***menu-la-palette-du-gout***/
+.img img {
+  width: 100%;
+}
+
+.first-title {
+  font-family: "Shrikhand";
+  font-style: italic;
+  background: #F7F7F7;
+  display: flex;
+  padding: 32px 17px 0px;
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+  position: relative;
+  top: -43px;
+}
+
+.container {
+  background: #F7F7F7;
+  padding-bottom: 98px;
+}
+
+.menu h1 {
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-left: 13px;
+}
+.menu span {
+  display: flex;
+  margin: 5px 0 5px;
+}
+
+.plats {
+  font-weight: 500;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.prix {
+  flex: none;
+  font-weight: 700;
+  position: absolute;
+  left: 90%;
+  top: 35px;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
 }
 
-/***icones***/
+/***icone fa-heart home page***/
 .fa-regular, .far {
   position: relative;
   left: 45%;
   color: #7E7E7E;
   width: 22px;
   height: 21px;
+}
+
+.fa-location-dot {
+  color: #353535;
+}
+
+/***icone fa-heart menu page***/
+h1 .fa-regular, h1 .far {
+  left: 20%;
+}
+
+.fa-arrow-left {
+  width: 17px;
+  position: relative;
+  right: 900%;
+  top: 109%;
+  color: #353535;
 }
 
 /****** Media queries ***********/

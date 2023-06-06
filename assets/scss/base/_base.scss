@@ -3,7 +3,7 @@
     text-decoration: none;
 }
 
-/***icones***/  
+/***icone fa-heart home page***/  
 .fa-regular, .far {
     position: relative;
     left: 45%;
@@ -12,6 +12,24 @@
     height: 21px;
 }
 
+.fa-location-dot {
+    color: $color-gray;
+}
+/***icone fa-heart menu page***/ 
+h1 {
+
+& .fa-regular, .far {
+    left: 20%;
+}
+}
+
+.fa-arrow-left {
+    width: 17px;
+    position: relative;
+    right: 900%;
+    top: 109%;
+    color: $color-gray;
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */

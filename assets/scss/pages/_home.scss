@@ -1,15 +1,17 @@
-/***Home page***/
-/***Explorer nos restaurant***/
-.explorer {
+.explore {
   @include flexcolumn;
   gap: 27px;
   width: 100%;
-  height: 287px;
   background: $verylight-gray;
   text-align: center;
   padding: 39px 0 57px;
 
-  & h2 {
+  h1 {
+    padding-left: 60px;
+    padding-right: 65px;
+  }
+
+   h2 {
     font-size: 18px;
     color: $color-gray
   }
@@ -21,10 +23,10 @@ h1 {
 }
 
 /***Fonctionnement***/
-.fonctionnement {
+.functioning {
   margin-top: 48px;
 
-  & h1 {
+   h1 {
     margin-left: 20px;
   }
 }
@@ -35,75 +37,11 @@ h1 {
   padding: 0 15px;
   margin-bottom: 66px;
 
-  & h1 {
+  h1 {
     padding-top: 48px;
     padding-bottom: 20px;
   }
 }
 
-.cards {
-  @include flexcolumn;
-  gap: 18px;
 
-  & img {
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-}
 
-.card {
-  width: 100%;
-
-  &__content {
-    background: $color-white;
-    height: 77px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 13px;
-    border-radius: 15px;
-  }
-
-  &__content--title {
-    background: $color-white;
-    font-weight: 700;
-    font-size: 18px;
-    color: $color-black;
-  }
-
-  h3 {
-    color: $color-black;
-    font-weight: 300;
-    font-size: 17px;
-  }
-}
-
-/***icones***/  
-.pastille {
-  position: absolute;
-  left: -15px;
-  border: 2px solid $color-primary;
-    border-radius: 25px;
-    padding: 4px 8px;
-    color: $color-white;
-    background: $color-primary;
-}
-
-.fa-store {
-  color:$color-primary;
-  position: absolute;
-  left: 12%;
-}
-
-.fa-list-ul {
-  color: $color-icones;
-  position: absolute;
-  left: 12%;
-}
-
-.fa-mobile-screen-button {
-  color: $color-icones;
-  position: absolute;
-  left: 12%;
-}

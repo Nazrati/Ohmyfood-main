@@ -1,0 +1,36 @@
+/***boutton***/
+.btn {
+    &__grey--menu {
+        background: $color-white;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        width: 349px;
+        height: 69px;
+    }
+}
+
+    .btn__purple--menu {
+        @include flexcolumn;
+        
+        & button {
+            width: 180px;
+            height: 50px;
+        }   
+    }
+
+/***icones***/
+h1 {
+
+    & .fa-regular,
+    .far {
+        left: 20%;
+    }
+}
+
+.fa-arrow-left {
+    width: 17px;
+    position: relative;
+    right: 900%;
+    top: 109%;
+    color: $color-gray;
+}

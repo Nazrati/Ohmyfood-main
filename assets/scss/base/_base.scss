@@ -1,39 +1,147 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-}
-
-/***icone fa-heart home page***/  
-.fa-regular, .far {
-    position: relative;
-    left: 45%;
-    color: $color-icones;
-    width: 22px;
-    height: 21px;
-}
-
-.fa-location-dot {
-    color: $color-gray;
-}
-/***icone fa-heart menu page***/ 
-h1 {
-
-& .fa-regular, .far {
-    left: 20%;
-}
-}
-
-.fa-arrow-left {
-    width: 17px;
-    position: relative;
-    right: 900%;
-    top: 109%;
-    color: $color-gray;
+    font-family: 'Roboto';
 }
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {}
+/**Tablette*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+   .cards {
 
-/* Desktop (desktop, less than 1440px) */
-@media (max-width: 1440px) {}
+        img {
+            width: 100%;
+        }
+    }
+
+    .restaurants {
+        margin-bottom: 5px;
+    }
+
+    .fa-arrow-left {
+        right: 2000%;
+    }
+
+    .container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .menu {
+
+        h1 {
+            margin-left: 95px;
+        }
+    }
+
+    .btn {
+        flex-direction: column;
+        &__grey--menu {
+            width: 400px;
+            margin-left: 51px;
+            margin-right: 50px;
+        }
+    }
+
+    .first-title {
+        padding-left: 150px;
+     }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        padding: 64px 31px;
+
+        .footer-links {
+            flex-direction: row;
+            gap: 14px;
+        }
+    }
+
+}
+/****** Media queries ***********/
+/**Desktop*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .btn {
+       
+      flex-direction: row;
+    
+        &__grey {
+            width: 322px;
+        }
+    }
+
+    .functioning {
+      
+         h1 {
+         margin-left: 140px;
+        }
+      }
+
+    .restaurants {
+        margin-bottom: 10px;
+         h1 {
+            margin-left: 140px;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 45px;
+        align-items: center;
+        margin-left: 140px;
+        margin-right: 130px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        padding: 65px 30px 45px;
+
+
+        .footer-links {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+    }
+
+    .fa-arrow-left {
+        right: 3000%;
+    }
+
+    .container {
+        margin-left: 163px;
+        margin-right: 162px;
+    }
+
+    .first-title {
+        padding-left: 300px;
+     }  
+
+    .menu {
+
+        h1 {
+            margin-left: 200px;
+        }
+    }
+
+    .btn {
+
+        flex-direction: column;
+        justify-content: center;
+
+        &__grey--menu {
+            width: 600px;
+           
+        }
+    }
+}

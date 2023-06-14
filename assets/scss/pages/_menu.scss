@@ -1,54 +1,57 @@
- /***menu***/
- /***menu-la-palette-du-gout***/
- .img {
+.headergroup__logo--menu {
+    padding-top: 8px;
+}
 
-     & img {
-         width: 100%;
-     }
- }
+.img {
 
- .first-title {
-     font-family: 'Shrikhand';
-     font-style: italic;
-     background: $verylight-gray;
-     display: flex;
-     padding: 32px 17px 0px;
-     border-top-left-radius: 38px;
-     border-top-right-radius: 38px;
-     position: relative;
-     top: -43px;
- }
+     img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
 
- .container {
-     background: $verylight-gray;
-     padding-bottom: 98px;
- }
+.first-title {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    background: $verylight-gray;
+    display: flex;
+    padding: 32px 17px 0px;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    position: relative;
+    top: -43px;
+}
 
- .menu {
-      
-     & h1 {
-         font-weight: 300;
-         border-bottom: 3px solid #99E2D0;
-         width: 40px;
-         margin-left: 13px;
-     }
+.container {
+    background: $verylight-gray;
+    padding-bottom: 45px;
+}
 
-     & span {
+.menu {
+
+     h1 {
+        font-weight: 300;
+        border-bottom: 3px solid #99E2D0;
+        width: 40px;
+        margin-left: 13px;
+    }
+
+     span {
         display: flex;
         margin: 5px 0 5px;
-     }
- }
+    }
+}
 
- .plats {
+.dishes {
     font-weight: 500;
     font-weight: 700;
     font-size: 18px;
 }
- 
-.prix {
-    flex: none;
+
+.price {
     font-weight: 700;
     position: absolute;
     left: 90%;
     top: 35px;
 }
+

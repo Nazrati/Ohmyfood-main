@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title> Menu - À la française</title>
+    <title>Menu - À la française</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,58 +14,63 @@
 </head>
 
 <body>
-
     <header class="headergroup">
-        <div class="headergroup__logo"><img src="../assets/images/logo/ohmyfood.png" width="162" height="44" alt="logo">
+        <div class="headergroup__logo headergroup__logo--menu"><a href="../index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a><img src="../assets/images/logo/ohmyfood.png" width="162" height="44" alt="logo">
         </div>
     </header>
-
-    <div>
-        <main>
-            <section class="entrees">
-                <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="346" height="231"
-                    alt="Menu - À la française">
-                <h1>À la française</h1>
-                <h2>Entrées</h2>
-                <div class="btn">
-                    <button class="btn__grey">Tartare de poulpe acidulé<br>Aux zestes d'orange 25€</button>
-                    <button class="btn__grey">Velouté de légumes d'antan<br>Carotte, panais, topinambour 35€</button>
-                    <button class="btn__grey">Soupe à l'oignon<br>Revisitée 20€</button>
+    <main>
+        <div class="img">
+            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="346" height="231"
+                alt="Menu - À la française">
+        </div>
+        <div class="container">
+            <section class="first-title">
+                <div>
+                    <h1>À la française <i class="fa-sharp fa-regular fa-heart menu"></i></h1>
                 </div>
             </section>
-            <section class="plats">
+            <section class="menu">
+                <h1>Entrées</h1>
+                <div class="btn">
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Tartare de poulpe acidulé</span> <span>Aux zestes d'orange <span class="price">25€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Velouté de légumes d'antan</span> <span>Carotte, panais, topinambour <span class="price">35€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Soupe à l'oignon</span> <span>Revisitée<span class="price">20€</span></span></button>
+                </div>
+            </section>
+            <section class="menu">
                 <h1>Plats</h1>
                 <div class="btn">
-                    <button class="btn__grey">Coquilles Saint-Jacques<br>Accompagnées d'une purée de panais
-                        40€</button>
-                    <button class="btn__grey">Magret de canard<br>Et parmentier de pommes de terre
-                        35€</button>
-                    <button class="btn__grey">Pigeonneau d’Ille-et-Vilaine<br>Sur son lit de gnocchis aux légumes
-                        44€</button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Coquilles Saint-Jacques</span> <span>Accompagnées d'une purée de panais
+                        <span class="price">40€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Magret de canard</span> <span>Et parmentier de pommes de terre
+                        <span class="price">35€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Pigeonneau d’Ille-et-Vilaine</span> <span>Sur son lit de gnocchis aux légumes<span class="price">44€</span></span></button>
                 </div>
             </section>
-            <section class="desserts">
+            <section class="menu">
                 <h1>Desserts</h1>
                 <div class="btn">
-                    <button class="btn__grey">Pétales de violettes glacés<br>Et purée de noisettes 18€</button>
-                    <button class="btn__grey">Fondant au chocolat<br>Revisité
-                        22€</button>
-                    <button class="btn__grey">Millefeuille croustillant<br>Myrtilles et pâte d’amande 23€</button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Pétales de violettes glacés</span> <span>Et purée de noisettes <span class="price">18€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Fondant au chocolat</span> <span>Revisité
+                        <span class="price">22€</span></span></button>
+                    <button class="btn__grey btn__grey--menu"><span class="dishes">Millefeuille croustillant</span> <span>Myrtilles et pâte d’amande
+                        <span class="price">23€</span></span></button>
                 </div>
-                <button class="btn__degraded">Commander</button>
             </section>
-        </main>
-        <footer>
-            <div><img class="footer-logo" src="../assets/images/logo/ohmyfood.png" width="137" height="27" alt="logo">
+            <div class="btn__purple--menu">
+                <button class="btn__purple">Commander</button>
             </div>
-            <div class="footer-links">
-                <a href="#"><i class="fa-sharp fa-solid fa-utensils"></i> Proposer un restaurant</a>
-                <a href="#"><i class="fa-sharp fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer>
+        <div><img class="footer-logo" src="../assets/images/logo/ohmyfood.png" width="137" height="27" alt="logo"></div>
+        <div class="footer-links">
+           <a href="#"><i class="fa-sharp fa-solid fa-utensils"></i> Proposer un restaurant</a>
+           <a href="#"><i class="fa-sharp fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
+           <a href="#">Mentions légales</a>
+           <a href="#">Contact</a>
+        </div>
+     </footer>
 </body>
 
 </html>

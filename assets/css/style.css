@@ -64,14 +64,6 @@ table {
   padding-left: 30px;
   padding-right: 40px;
 }
-.btn__purple {
-  color: #FFFFFF;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  padding: 13px 18px;
-  font-size: 16px;
-}
 .btn__grey {
   background-color: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -88,6 +80,15 @@ table {
   transform: scal(1.13);
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+.btn__purple {
+  color: #FFFFFF;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 13px 18px;
+  font-size: 16px;
+  border: none;
 }
 
 /***icones***/
@@ -166,11 +167,19 @@ table {
 }
 
 /***boutton***/
-.btn__grey--menu {
+.btn__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 13px 40px;
+}
+
+.btn__menu--white {
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  width: 349px;
+  border: none;
+  width: 100%;
   height: 69px;
 }
 
@@ -344,7 +353,6 @@ h1 {
 }
 
 .dishes {
-  font-weight: 500;
   font-weight: 700;
   font-size: 18px;
 }
@@ -352,8 +360,7 @@ h1 {
 .price {
   font-weight: 700;
   position: absolute;
-  left: 90%;
-  top: 35px;
+  left: 85%;
 }
 
 * {
@@ -365,11 +372,17 @@ h1 {
 /****** Media queries ***********/
 /**Tablette*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .btn {
+    width: 100%;
+  }
   .cards img {
     width: 100%;
   }
   .restaurants {
     margin-bottom: 5px;
+  }
+  .menu h1 {
+    margin-left: 95px;
   }
   .fa-arrow-left {
     right: 2000%;
@@ -378,16 +391,14 @@ h1 {
     margin-left: 80px;
     margin-right: 80px;
   }
-  .menu h1 {
-    margin-left: 95px;
+  .btn__menu {
+    align-items: center;
   }
-  .btn {
-    flex-direction: column;
+  .btn__menu--white {
+    width: 70%;
   }
-  .btn__grey--menu {
-    width: 400px;
-    margin-left: 51px;
-    margin-right: 50px;
+  .price {
+    left: 70%;
   }
   .first-title {
     padding-left: 150px;
@@ -408,9 +419,10 @@ h1 {
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .btn {
     flex-direction: row;
+    margin-left: 140px;
   }
   .btn__grey {
-    width: 322px;
+    width: 25%;
   }
   .functioning h1 {
     margin-left: 140px;
@@ -442,6 +454,9 @@ h1 {
     flex-direction: row;
     gap: 30px;
   }
+  .menu h1 {
+    margin-left: 170px;
+  }
   .fa-arrow-left {
     right: 3000%;
   }
@@ -452,15 +467,14 @@ h1 {
   .first-title {
     padding-left: 300px;
   }
-  .menu h1 {
-    margin-left: 200px;
+  .btn__menu {
+    align-items: center;
   }
-  .btn {
-    flex-direction: column;
-    justify-content: center;
+  .btn__menu--white {
+    width: 70%;
   }
-  .btn__grey--menu {
-    width: 600px;
+  .price {
+    left: 70%;
   }
 }
 

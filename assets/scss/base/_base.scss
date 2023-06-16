@@ -7,7 +7,11 @@
 /****** Media queries ***********/
 /**Tablette*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-   .cards {
+    .btn {
+        width: 100%;
+    }
+
+    .cards {
 
         img {
             width: 100%;
@@ -16,6 +20,13 @@
 
     .restaurants {
         margin-bottom: 5px;
+    }
+
+    .menu {
+
+        h1 {
+            margin-left: 95px;
+        }
     }
 
     .fa-arrow-left {
@@ -27,25 +38,21 @@
         margin-right: 80px;
     }
 
-    .menu {
-
-        h1 {
-            margin-left: 95px;
-        }
+    .btn__menu {
+        align-items: center;
     }
 
-    .btn {
-        flex-direction: column;
-        &__grey--menu {
-            width: 400px;
-            margin-left: 51px;
-            margin-right: 50px;
-        }
+    .btn__menu--white {
+        width: 70%;
+    }
+
+    .price {
+        left: 70%;
     }
 
     .first-title {
         padding-left: 150px;
-     }
+    }
 
     footer {
         display: flex;
@@ -60,29 +67,31 @@
     }
 
 }
+
 /****** Media queries ***********/
 /**Desktop*/
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
     .btn {
-       
-      flex-direction: row;
-    
+        flex-direction: row;
+        margin-left: 140px;
+
         &__grey {
-            width: 322px;
+            width: 25%;
         }
     }
 
     .functioning {
-      
-         h1 {
-         margin-left: 140px;
+
+        h1 {
+            margin-left: 140px;
         }
-      }
+    }
 
     .restaurants {
         margin-bottom: 10px;
-         h1 {
+
+        h1 {
             margin-left: 140px;
         }
     }
@@ -114,6 +123,13 @@
 
     }
 
+    .menu {
+
+        h1 {
+            margin-left: 170px;
+        }
+    }
+
     .fa-arrow-left {
         right: 3000%;
     }
@@ -125,23 +141,17 @@
 
     .first-title {
         padding-left: 300px;
-     }  
-
-    .menu {
-
-        h1 {
-            margin-left: 200px;
-        }
     }
 
-    .btn {
+    .btn__menu {
+        align-items: center;
+    }
 
-        flex-direction: column;
-        justify-content: center;
+    .btn__menu--white {
+        width: 70%;
+    }
 
-        &__grey--menu {
-            width: 600px;
-           
-        }
+    .price {
+        left: 70%;
     }
 }

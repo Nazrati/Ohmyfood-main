@@ -4,7 +4,7 @@
 
 .img {
 
-     img {
+    img {
         width: 100%;
         object-fit: cover;
     }
@@ -29,21 +29,20 @@
 
 .menu {
 
-     h1 {
+    h1 {
         font-weight: 300;
         border-bottom: 3px solid #99E2D0;
         width: 40px;
         margin-left: 13px;
     }
 
-     span {
+    span {
         display: flex;
         margin: 5px 0 5px;
     }
 }
 
 .dishes {
-    font-weight: 500;
     font-weight: 700;
     font-size: 18px;
 }
@@ -51,7 +50,5 @@
 .price {
     font-weight: 700;
     position: absolute;
-    left: 90%;
-    top: 35px;
+    left: 85%;
 }
-

@@ -1,37 +1,57 @@
 .cards {
-    @include flexcolumn;
-    gap: 18px;
-  
-     img {
-      object-fit: cover;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+  @include flexcolumn;
+  gap: 18px;
+
+  img {
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+.card {
+  width: 100%;
+
+  &__content {
+    background: $color-white;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 13px;
+    border-radius: 15px;
+    position: relative;
+
+    .heart-empty,
+    .heart-filled {
+      position: absolute;
+      right: 20px;
+    }
+
+    .heart-filled {
+      opacity: 0;
+      background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+      transition: opacity 1000ms ease-in-out;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &:active {
+        opacity: 1;
+      }
     }
   }
-  
-  .card {
-    width: 100%;
-  
-    &__content {
-      background: $color-white;
-      height: 77px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      padding: 13px;
-      border-radius: 15px;
-    }
-  
-    &__content--title {
-      background: $color-white;
-      font-weight: 700;
-      font-size: 18px;
-      color: $color-black;
-    }
-  
-    h3 {
-      color: $color-black;
-      font-weight: 300;
-      font-size: 17px;
-    }
+
+  &__content--title {
+    background: $color-white;
+    font-weight: 700;
+    font-size: 18px;
+    color: $color-black;
   }
+
+  h3 {
+    color: $color-black;
+    font-weight: 300;
+    font-size: 17px;
+  }
+}

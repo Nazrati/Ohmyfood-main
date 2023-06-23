@@ -89,26 +89,25 @@ table {
 }
 
 /***icones***/
-.heart {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 75%;
-  right: 45%;
-  transform: scale(1.8);
-  color: #9356DC;
-}
-.heart-menu {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 45%;
-  left: 3%;
-  transform: scale(1.8);
-  color: #9356DC;
-}
+/*.heart {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 75%;
+    right: 45%;
+    transform: scale(1.8);
+    color: $color-primary;
 
-@keyframes progress-heart {}
+
+    &-menu {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 45%;
+        left: 3%;
+        transform: scale(1.8);
+        color: $color-primary;
+    }*/
 .fa-location-dot {
   color: #353535;
 }
@@ -161,6 +160,23 @@ table {
   gap: 5px;
   padding: 13px;
   border-radius: 15px;
+  position: relative;
+}
+.card__content .heart-empty,
+.card__content .heart-filled {
+  position: absolute;
+  right: 20px;
+}
+.card__content .heart-filled {
+  opacity: 0;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  transition: opacity 1000ms ease-in-out;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__content .heart-filled:active {
+  opacity: 1;
 }
 .card__content--title {
   background: #FFFFFF;

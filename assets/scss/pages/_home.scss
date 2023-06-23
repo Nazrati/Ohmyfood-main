@@ -11,7 +11,7 @@
     padding-right: 65px;
   }
 
-   h2 {
+  h2 {
     font-size: 18px;
     color: $color-gray
   }
@@ -26,7 +26,7 @@ h1 {
 .functioning {
   margin-top: 48px;
 
-   h1 {
+  h1 {
     margin-left: 20px;
   }
 }
@@ -43,5 +43,78 @@ h1 {
   }
 }
 
+.loading {
+  background-color: $color-tertiary;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  animation: hidden-loader 3000ms forwards;
+  z-index: 1;
 
+  p {
+    display: inline-block;
+    font-size: 40px;
+    color: $color-white;
+  }
+}
 
+.loader {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+}
+
+/*---------------------------------------*\
+ $Loader Quart de cercle
+\*---------------------------------------*/
+
+.loader-quart {
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #FFF;
+  animation: spin 1s linear 0s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hidden-loader {
+  0% {
+    z-index: 10;
+  }
+
+  99% {
+    z-index: 10;
+  }
+
+  100% {
+    z-index: -10;
+    visibility: hidden;
+  }
+}

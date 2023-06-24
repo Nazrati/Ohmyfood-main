@@ -4,73 +4,9 @@
     font-family: 'Roboto';
 }
 
-/****** Media queries ***********/
-/**Tablette*/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .btn {
-        width: 100%;
-    }
-
-    .cards {
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .restaurants {
-        margin-bottom: 5px;
-    }
-
-    .menu {
-
-        h1 {
-            margin-left: 95px;
-        }
-    }
-
-    .fa-arrow-left {
-        right: 2000%;
-    }
-
-    .container {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
-    .btn__menu {
-        align-items: center;
-    }
-
-    .btn__menu--white {
-        width: 70%;
-    }
-
-    .price {
-        left: 70%;
-    }
-
-    .first-title {
-        padding-left: 150px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 20px;
-        padding: 64px 31px;
-
-        .footer-links {
-            flex-direction: row;
-            gap: 14px;
-        }
-    }
-
-}
-
-/****** Media queries ***********/
-/**Desktop*/
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+/*/****** Media queries ***********/
+/*Desktop*/
+@media (min-width: 769px) and (max-width: 1440px) {
 
     .btn {
         flex-direction: row;
@@ -89,7 +25,7 @@
     }
 
     .restaurants {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         h1 {
             margin-left: 140px;
@@ -128,6 +64,11 @@
         h1 {
             margin-left: 170px;
         }
+    }
+
+    .heart-emptymenu,
+    .heart-filledmenu {
+        right: 450px;  
     }
 
     .fa-arrow-left {

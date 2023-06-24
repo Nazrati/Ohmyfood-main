@@ -22,6 +22,26 @@
     top: -43px;
 }
 
+.heart-emptymenu,
+.heart-filledmenu {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+.heart-filledmenu {
+    opacity: 0;
+    background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+    transition: opacity 1000ms ease-in-out;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:active {
+        opacity: 1;
+    }
+}
+
 .container {
     background: $verylight-gray;
     padding-bottom: 45px;

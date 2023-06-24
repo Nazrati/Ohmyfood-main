@@ -30,7 +30,7 @@
 
     .heart-filled {
       opacity: 0;
-      background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+      background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
       transition: opacity 1000ms ease-in-out;
       background-clip: border-box;
       -webkit-background-clip: text;

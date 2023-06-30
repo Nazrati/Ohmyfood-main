@@ -133,6 +133,9 @@ table {
 .card {
   width: 100%;
 }
+.card img {
+  width: 100%;
+}
 .card__content {
   background: #FFFFFF;
   height: 77px;
@@ -518,16 +521,16 @@ h1 {
 
 /*/****** Media queries ***********/
 /*Desktop*/
-@media (min-width: 769px) and (max-width: 1440px) {
+@media (min-width: 1350px) {
   .btn {
     flex-direction: row;
-    margin-left: 140px;
+    margin-left: 130px;
   }
   .btn__grey {
     width: 25%;
   }
   .functioning h1 {
-    margin-left: 140px;
+    margin-left: 165px;
   }
   .restaurants {
     margin-bottom: 20px;

@@ -74,6 +74,7 @@ table {
   width: 100%;
   height: 72px;
   font-size: 16px;
+  font-weight: 500;
 }
 .btn__grey:hover {
   background-color: #FFFFFF;
@@ -85,6 +86,7 @@ table {
   border-radius: 25px;
   padding: 13px 18px;
   font-size: 16px;
+  font-weight: 500;
   border: none;
 }
 
@@ -122,7 +124,6 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
 }
 .cards img {
   object-fit: cover;
@@ -132,6 +133,7 @@ table {
 
 .card {
   width: 100%;
+  position: relative;
 }
 .card img {
   width: 100%;
@@ -141,17 +143,31 @@ table {
   height: 77px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  width: 100%;
   padding: 13px;
-  border-radius: 15px;
-  position: relative;
+  margin-bottom: 18px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
-.card__content .heart-empty,
-.card__content .heart-filled {
+.card__content__title {
+  background: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.card__content h3 {
+  color: #000000;
+  font-weight: 300;
+  font-size: 17px;
+}
+.card .heart-empty,
+.card .heart-filled {
   position: absolute;
+  top: 75%;
   right: 20px;
 }
-.card__content .heart-filled {
+.card .heart-filled {
   opacity: 0;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
   transition: opacity 1000ms ease-in-out;
@@ -159,22 +175,14 @@ table {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__content .heart-filled:active {
+.card .heart-filled:active {
   opacity: 1;
 }
-.card__title {
-  background: #FFFFFF;
-  font-weight: 700;
-  font-size: 18px;
-  color: #000000;
-}
-.card h3 {
-  color: #000000;
-  font-weight: 300;
-  font-size: 17px;
+
+.last-card {
+  margin-bottom: 60px;
 }
 
-/***boutton***/
 .menu__card {
   display: flex;
   flex-direction: column;
@@ -245,9 +253,8 @@ h1 .far {
 
 .fa-arrow-left {
   width: 17px;
-  position: relative;
-  right: 900%;
-  top: 109%;
+  position: absolute;
+  right: 90%;
   color: #353535;
 }
 
@@ -332,6 +339,7 @@ footer img {
   filter: brightness(30);
 }
 footer .footer-links {
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -370,6 +378,7 @@ footer .fa-utensils {
 }
 .explore h2 {
   font-size: 18px;
+  font-weight: 300;
   color: #353535;
 }
 
@@ -390,7 +399,6 @@ h1 {
 .restaurants {
   background: #F7F7F7;
   padding: 0 15px;
-  margin-bottom: 66px;
 }
 .restaurants h1 {
   padding-top: 48px;
@@ -446,7 +454,7 @@ h1 {
 }
 
 .headergroup__logo--menu {
-  padding-top: 8px;
+  position: relative;
 }
 
 .img img {
@@ -522,6 +530,9 @@ h1 {
 /*/****** Media queries ***********/
 /*Desktop*/
 @media (min-width: 1350px) {
+  .explore h1 {
+    font-size: 40px;
+  }
   .btn {
     flex-direction: row;
     margin-left: 130px;
@@ -532,22 +543,22 @@ h1 {
   .functioning h1 {
     margin-left: 165px;
   }
-  .restaurants {
-    margin-bottom: 20px;
-  }
   .restaurants h1 {
     margin-left: 140px;
   }
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    gap: 45px;
     align-items: center;
     margin-left: 140px;
     margin-right: 130px;
+    gap: 50px 100px;
   }
-  .cards img {
-    width: 100%;
+  .card__content {
+    margin-bottom: 30px;
+  }
+  .last-card {
+    margin-bottom: 30px;
   }
   footer {
     display: flex;
@@ -565,9 +576,6 @@ h1 {
   .heart-emptymenu,
   .heart-filledmenu {
     right: 450px;
-  }
-  .fa-arrow-left {
-    right: 3000%;
   }
   .container {
     margin-left: 163px;

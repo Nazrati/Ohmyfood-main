@@ -1,79 +1,95 @@
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto';
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
 }
 
 /*/****** Media queries ***********/
 /*Desktop*/
 @media (min-width: 1350px) {
-    .btn {
-        flex-direction: row;
-        margin-left: 130px;
-        
-        &__grey {
-           width: 25%;
-        }
+  .explore {
+
+    & h1 {
+      font-size: 40px;
     }
-    .functioning {
-        h1 {
-            margin-left: 165px;
-            
-        }
+  }
+
+  .btn {
+    flex-direction: row;
+    margin-left: 130px;
+
+    &__grey {
+      width: 25%;
     }
-    .restaurants {
-        margin-bottom: 20px;
-        h1 {
-            margin-left: 140px;
-        }
+  }
+
+  .functioning {
+    h1 {
+      margin-left: 165px;
     }
+  }
+
+  .restaurants {
+    
+    h1 {
+      margin-left: 140px;
+    }
+  }
+
     .cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        gap: 45px;
         align-items: center;
         margin-left: 140px;
         margin-right: 130px;
-        img {
-            width: 100%;
-        }
+        gap: 50px 100px;
+    } 
+
+    .card {
+     
+      &__content {
+        margin-bottom: 30px;
+      }
     }
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 50px;
-        padding: 65px 30px 45px;
-        .footer-links {
-            flex-direction: row;
-            gap: 30px;
-        }
+
+    .last-card {
+      margin-bottom: 30px;
     }
-    .menu {
-        h1 {
-            margin-left: 170px;
-        }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    padding: 65px 30px 45px;
+
+    .footer-links {
+      flex-direction: row;
+      gap: 30px;
     }
-    .heart-emptymenu,
-    .heart-filledmenu {
-        right: 450px;
+  }
+
+  .menu {
+    h1 {
+      margin-left: 170px;
     }
-    .fa-arrow-left {
-        right: 3000%;
-    }
-    .container {
-        margin-left: 163px;
-        margin-right: 162px;
-    }
-    .first-title {
-        padding-left: 300px;
-    }
-    .menu__card__details {
-        width: 70%;
-        margin-left: 165px;
-    }
+  }
+
+  .heart-emptymenu,
+  .heart-filledmenu {
+    right: 450px;
+  }
+
+  .container {
+    margin-left: 163px;
+    margin-right: 162px;
+  }
+
+  .first-title {
+    padding-left: 300px;
+  }
+
+  .menu__card__details {
+    width: 70%;
+    margin-left: 165px;
+  }
 }
-        
-    
-
-
-    

@@ -1,5 +1,4 @@
 .headergroup__logo--menu {
-   // padding-top: 8px;
     position: relative;
 }
 
@@ -21,13 +20,17 @@
     border-top-right-radius: 38px;
     position: relative;
     top: -43px;
+
+    & div {
+        position: relative;
+    }
 }
 
 .heart-emptymenu,
 .heart-filledmenu {
     position: absolute;
-    right: 50px;
-    top: 40px;
+    right: -50px;
+    top: 4px;
 }
 
 .heart-filledmenu {
@@ -67,10 +70,14 @@
 .dishes {
     font-weight: 700;
     font-size: 18px;
+
+    &__carrot {
+        font-weight: 300;
+    }
 }
 
 .price {
     font-weight: 700;
     position: absolute;
-    left: 85%;
+    right: 60px;
 }

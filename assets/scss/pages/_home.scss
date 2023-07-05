@@ -4,7 +4,7 @@
   width: 100%;
   background: $verylight-gray;
   text-align: center;
-  padding: 39px 0 57px;
+  padding: 30px 0;
 
   h1 {
     padding-left: 60px;
@@ -41,6 +41,17 @@ h1 {
     padding-top: 48px;
     padding-bottom: 20px;
   }
+}
+
+.new {
+  width: 80px;
+  height: 29px;
+  background-color: $color-tertiary;
+  color: $green-font;
+  padding: 7px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .loading {

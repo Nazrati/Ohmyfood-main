@@ -254,7 +254,7 @@ h1 .far {
 .fa-arrow-left {
   width: 17px;
   position: absolute;
-  right: 90%;
+  left: 17px;
   color: #353535;
 }
 
@@ -327,6 +327,7 @@ h1 .far {
 .navbar__link {
   color: #353535;
   margin-left: 16px;
+  font-family: "roboto";
 }
 
 footer {
@@ -370,7 +371,7 @@ footer .fa-utensils {
   width: 100%;
   background: #F7F7F7;
   text-align: center;
-  padding: 39px 0 57px;
+  padding: 30px 0;
 }
 .explore h1 {
   padding-left: 60px;
@@ -403,6 +404,17 @@ h1 {
 .restaurants h1 {
   padding-top: 48px;
   padding-bottom: 20px;
+}
+
+.new {
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 7px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .loading {
@@ -473,12 +485,15 @@ h1 {
   position: relative;
   top: -43px;
 }
+.first-title div {
+  position: relative;
+}
 
 .heart-emptymenu,
 .heart-filledmenu {
   position: absolute;
-  right: 50px;
-  top: 40px;
+  right: -50px;
+  top: 4px;
 }
 
 .heart-filledmenu {
@@ -514,11 +529,14 @@ h1 {
   font-weight: 700;
   font-size: 18px;
 }
+.dishes__carrot {
+  font-weight: 300;
+}
 
 .price {
   font-weight: 700;
   position: absolute;
-  left: 85%;
+  right: 60px;
 }
 
 * {
@@ -573,16 +591,13 @@ h1 {
   .menu h1 {
     margin-left: 170px;
   }
-  .heart-emptymenu,
-  .heart-filledmenu {
-    right: 450px;
-  }
   .container {
     margin-left: 163px;
     margin-right: 162px;
   }
   .first-title {
-    padding-left: 300px;
+    align-items: center;
+    justify-content: center;
   }
   .menu__card__details {
     width: 70%;

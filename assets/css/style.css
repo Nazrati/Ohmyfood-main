@@ -183,12 +183,6 @@ table {
   margin-bottom: 60px;
 }
 
-.menu__card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin: 12px 13px 40px;
-}
 .menu__card__details {
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -205,19 +199,22 @@ table {
 .menu__card__details .dishes {
   width: 100%;
 }
+.menu__card__details .price {
+  transition: transform 0.4s ease-in-out;
+}
 .menu__card__details:hover {
   overflow: hidden;
   cursor: pointer;
 }
 .menu__card__details:hover > .menu__card__details__check {
   right: 0px;
+  top: -5px;
   position: absolute;
   background: #99E2D0;
   height: 84px;
   border-radius: 0 15px 15px 0;
   animation: slideIn 0.4s ease-out forwards;
   overflow: hidden;
-  top: -5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,6 +226,9 @@ table {
   padding: 20px;
   transform: rotate(1turn);
   transition: transform 700ms ease-in-out 0.2s;
+}
+.menu__card__details:hover .price {
+  transform: translateX(-50px);
 }
 .menu__card__details i {
   opacity: 0;
@@ -530,6 +530,9 @@ h1 {
 }
 .dishes__carrot {
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {

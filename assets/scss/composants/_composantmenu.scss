@@ -1,10 +1,5 @@
 .menu__card {
 
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 12px 13px 40px;
-
     &__details {
         background: $color-white;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -20,6 +15,10 @@
 
         .dishes {
             width: 100%;
+        }
+              
+        .price {
+            transition: transform 0.4s ease-in-out;
         }
 
         &:hover {
@@ -47,6 +46,10 @@
                     transform: rotate(1turn);
                     transition: transform 700ms ease-in-out 0.2s;
                 }
+            }
+
+            .price {
+                transform: translateX(-50px);
             }
         }
 
